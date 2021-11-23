@@ -3,6 +3,17 @@
 body{
   font-family: 'Noto Sans JP', sans-serif;
 }
+
+.conteiner{
+  width: 84%;
+  margin: 0 auto;
+}
+@media (min-width:900px){
+  .container{
+    width: 91%;
+    max-width: 1240px;
+  }
+}
 /* リセット ノーマライズ サニタイズ */
 body,h1,h2,h3,h4,h5,h6,p,ul,figure{
   margin: 0;
@@ -18,8 +29,33 @@ a:hover{
   opacity: 0.8;
 }
 
+// スクリーンリーダに非表示？
+.sr-only{
+  border :0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 // ヘッダー
 //ヘッダーサイト名
+
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 74px;
+}
+
+@media (min-width:900px){
+  .header .container{
+    height: 100px;
+  }
+}
 
 .site{
   display: flex;
@@ -41,3 +77,48 @@ a:hover{
   }
 }
 
+@media(min-width: 900px){
+  .site img{
+    width: 59px;
+    margin-right: 18px;
+  }
+  .site .corp{
+    font-size: 20px;
+  }
+  .site .desc{
+    font-size: 12px;
+  }
+}
+
+.nav-button{
+  box-sizing: content-box;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  width:20px;
+  height: 14px;
+  cursor: pointer;
+  color: #2E5180;
+}
+
+.nav-button::before,.nav-button::after{
+  content:'';
+  display:block;
+  height: 2px;
+  background-color: currentColor;
+  transform: translateY(5px);
+}
+
+.nav-button::before{
+  transform: translateY(-5px);
+  box-shadow: 0 6px currentColor;
+}
+
+/*ヒーロー*/
+.hero{
+  height: 400px;
+  background-image: url(../img/hero.PNG);
+  background-position: center;
+  background-size: cover;
+}
