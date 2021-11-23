@@ -1,32 +1,4 @@
-*{
-  margin:0;
-}
-
-
-.header{
-  h1{
-    text-align: center;
-    border: beige 1px solid;
-  }
-
-  .nav{
-    display: flex;
-    border: black 1px solid;
-    justify-content: space-around;
-    li{ 
-      list-style: none;
-      a{
-        display: block;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.main{
-  border: blue 1px solid;
-}
-
-.footer{
-  border: red 1px solid;
+@charset "UTF-8";
+body{
+  font-family: 'Noto Sans JP', sans-serif;
 }

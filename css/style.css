@@ -1,23 +1,5 @@
-* {
-  margin: 0; }
+@charset "UTF-8";
 
-.header h1 {
-  text-align: center;
-  border: beige 1px solid; }
-.header .nav {
-  display: flex;
-  border: black 1px solid;
-  justify-content: space-around; }
-  .header .nav li {
-    list-style: none; }
-    .header .nav li a {
-      display: block;
-      text-decoration: none; }
-
-.main {
-  border: blue 1px solid; }
-
-.footer {
-  border: red 1px solid; }
-
-/*# sourceMappingURL=style.css.map */
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
